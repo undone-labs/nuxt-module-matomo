@@ -1,0 +1,55 @@
+{
+  "name": "@agency-undone/nuxt-module-matomo",
+  "version": "1.0.0",
+  "description": "Matomo Analytics and/or Matomo Tag Manager (formerly Piwik) Module for Nuxt.js",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agency-undone/nuxt-module-matomo.git"
+  },
+  "keywords": [
+    "matomo",
+    "nuxt",
+    "nuxtjs",
+    "analytics",
+    "tag",
+    "manager"
+  ],
+  "author": {
+    "name": "Agency Undone",
+    "email": "hello@agencyundone.com"
+  },
+  "contributors": [
+    {
+      "name": "svvimming",
+      "url": "https://github.com/svvimming"
+    },
+    {
+      "name": "Orun Bhuiyan",
+      "url": "https://github.com/orvn"
+    }
+  ],
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/agency-undone/nuxt-module-matomo/issues"
+  },
+  "homepage": "https://github.com/agency-undone/nuxt-module-matomo#readme",
+  "scripts": {
+    "test": "eslint --ext .js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "latest",
+    "@nuxtjs/module-test-utils": "latest",
+    "eslint": "latest"
+  },
+  "peerDependencies": {
+    "nuxt": "*"
+  },
+  "engines": {
+    "node": ">=16.13.0"
+  },
+  "publishConfig": {
+   "access": "public"
+  }
+}

@@ -1,0 +1,5 @@
+/*
+ *
+ * 🔌 [Plugin | NuxtModuleMatomo] Methods
+ *
+ */

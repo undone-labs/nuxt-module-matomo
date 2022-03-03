@@ -1,0 +1,5 @@
+/*
+ *
+ * 📦 [Module] NuxtModuleIpfs
+ *
+ */
