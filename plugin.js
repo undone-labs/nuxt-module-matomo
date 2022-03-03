@@ -14,10 +14,12 @@ import Config from '@/nuxt.config'
 // -----------------------------------------------------------------------------
 export default ({ app }) => {
   const MATOMO_URL = Config.matomo.src
+  const routing = Config.matomo.routing
+  const targetType = Config.matomo.target
 
   app.router.afterEach((to, from) => {
 
-    if (typeof document !== 'undefined') {
+    if (typeof document !== 'undefined' && targetType === 'tag-manager') {
       let script = document.getElementById('matomo_injected_script')
       // if matomo script does not already exist,
       // create it and intialize tracking
@@ -33,7 +35,7 @@ export default ({ app }) => {
         `
         document.head.appendChild(script)
 
-      } else {
+      } else if (script && routing) {
         // if script does exist,
         // push page view event on router change
         _mtm.push({'event': 'mtm.PageView'});

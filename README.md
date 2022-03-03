@@ -12,7 +12,9 @@ Add the following to `nuxt.config.js` to include:
 
 ```
 matomo: {
-  include: true,
-  src: your_matomo_tag_manager_URL
+  include: true | false,
+  src: your_matomo_URL,
+  routing: true | false,
+  target: 'analytics' | 'tag-manager'
 }
 ```
