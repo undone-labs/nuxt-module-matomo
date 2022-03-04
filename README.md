@@ -4,8 +4,17 @@ Matomo Tag Manager and Matomo Analytics (formerly Piwik) module for use with Nux
 
 ## Installation
 
-(tbd)
+`npm i @agency-undone/nuxt-module-matomo --save`
 
 ## Usage
 
-(tbd)
+Add the following to `nuxt.config.js` to include:
+
+```js
+matomo: {
+  include: true | false,
+  src: your_matomo_URL,
+  routing: true | false,
+  target: 'analytics' | 'tag-manager'
+}
+```
